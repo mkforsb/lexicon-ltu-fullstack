@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace CsharpIntro
@@ -75,7 +77,7 @@ namespace CsharpIntro
 
             int maxRelevantFactor = x / 2;
             bool[] excludedFactors = new bool[maxRelevantFactor + 1];
-            List<String> output = [];
+            List<String> output = new() {};
 
             for (int factor = 2; factor <= maxRelevantFactor; ++factor)
             {
